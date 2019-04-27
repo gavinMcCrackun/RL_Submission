@@ -1,0 +1,25 @@
+{
+    "env_name": "mdp-line-v0",
+    "env_params": {
+        "expert_data": "movements.npz",
+        "max_steps": 10000
+    },
+    "policy_name": "ActorCriticPolicy",
+    "policy_params": {
+        "layer_sizes": [32, 32],
+        "deterministic": false
+    },
+    "train_params": {
+        "lr_a": 0.1,
+        "lr_a_decay": 0.99999,
+        "lr_c": 0.1,
+        "lr_c_decay": 0.99999,
+        "epsilon": 1.0,
+        "epsilon_final": 0.075,
+        "batch_size": 32,
+        "n_episodes": 50000,
+        "warmup_episodes": 10000,
+        "log_every_episode": 10,
+        "done_rewards": -1.0
+    }
+}

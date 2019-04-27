@@ -1,0 +1,21 @@
+{
+    "env_name": "CartPole-v1",
+    "policy_name": "ActorCriticPolicy",
+    "policy_params": {
+        "layer_sizes": [32],
+        "deterministic": true
+    },
+    "train_params": {
+        "lr_a": 0.01,
+        "lr_a_decay": 0.999,
+        "lr_c": 0.01,
+        "lr_c_decay": 0.999,
+        "epsilon": 1.0,
+        "epsilon_final": 0.05,
+        "batch_size": 32,
+        "n_episodes": 800,
+        "annealing_episodes": 720,
+        "log_every_episode": 10,
+        "done_rewards": -100.0
+    }
+}
